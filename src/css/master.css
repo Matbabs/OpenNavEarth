@@ -1,0 +1,75 @@
+html, body{
+    padding: 0; 
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial;
+}
+
+#map{
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    height: 100vh;
+    background: black; 
+}
+
+
+i{
+    vertical-align: middle;
+    color: white;
+}
+
+.nav{
+    background: rgba(0, 0, 0, 0);
+}
+
+#brand-icon{
+    margin-right: 5px;
+    font-size: 40px;
+}
+
+.info{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: black;
+    border-radius: 20px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.info > span{
+    vertical-align: middle; 
+    color: white;
+}
+
+.info > input{
+    width: 40px; 
+    border-radius: 10px; 
+    text-align: center;
+}
+
+#play{
+    transition: all 500ms;
+}
+
+#play > i{
+    font-size: 30px;
+}
+
+#play:hover > i{
+    cursor: pointer;
+}
+
+#coords{
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    z-index: 100000;
+}
