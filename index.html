@@ -34,8 +34,21 @@
           </li>
           <li class="nav-item ">
             <div class="info">
+              <span>ISS: </span>
+              <input id="numISS" type="checkbox" checked oninput="drawISS()">
+            </div>
+          </li>
+          <li class="nav-item ">
+            <div class="info">
               <span>Planes: </span>
               <input id="numPlanes" type="number" min="0" max="9" value="1" oninput="drawPlanes()">
+              <span>/10</span>
+            </div>
+          </li>
+          <li class="nav-item ">
+            <div class="info">
+              <span>Satellites: </span>
+              <input id="numSatellites" type="number" min="0" max="9" value="1" oninput="drawSatellites()">
               <span>/10</span>
             </div>
           </li>

@@ -53,6 +53,7 @@ i{
     width: 40px; 
     border-radius: 10px; 
     text-align: center;
+    vertical-align: middle;
 }
 
 #play{
