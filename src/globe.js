@@ -44,7 +44,8 @@ function initGlobe() {
     }).addTo(map);
 
     map.on('mousemove', function(e) {
-        document.getElementById('coords').innerHTML = "lat: "+e.latlng.lat + '<br>' + "lng: "+e.latlng.lng;
+        if(e.latlng && e.latlng)
+            document.getElementById('coords').innerHTML = "lat: "+e.latlng.lat + '<br>' + "lng: "+e.latlng.lng;
     });
 
     getPlanes()
@@ -193,10 +194,10 @@ function getVessels(){
 
 function getISS(){
     if(!issCrew){
-        xhr_issCrew.open('GET','http://api.open-notify.org/astros.json')
+        xhr_issCrew.open('GET','https://cors-anywhere.herokuapp.com/http://api.open-notify.org/astros.json')
         xhr_issCrew.send()
     }
-    xhr_iss.open('GET','http://api.open-notify.org/iss-now.json')
+    xhr_iss.open('GET','https://cors-anywhere.herokuapp.com/http://api.open-notify.org/iss-now.json')
     xhr_iss.send()
 }
 
