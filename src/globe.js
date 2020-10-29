@@ -36,21 +36,18 @@ function initGlobe() {
 
     map = WE.map('map', {
         center: [36.057944835, -112.18688965],
-        zoom: 2,
-        dragging: true,
-        scrollWheelZoom: true
+        zoom: 2
     });
 
     var baselayer = WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-   /* map.on('mousemove', function(e) {
-        document.getElementById('coords').innerHTML = e.latlng.lat + ', ' + e.latlng.lng;
-    });*/
+    map.on('mousemove', function(e) {
+        document.getElementById('coords').innerHTML = "lat: "+e.latlng.lat + '<br>' + "lng: "+e.latlng.lng;
+    });
 
     getPlanes()
-    //getVessels()
     getISS()
     getSattellites(satellitesView)
 

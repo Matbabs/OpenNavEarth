@@ -14,7 +14,8 @@ html, body{
     bottom: 0; 
     left: 0; 
     height: 100vh;
-    background: black; 
+
+    background: black;
 }
 
 
@@ -69,8 +70,10 @@ i{
 }
 
 #coords{
+    width: 220px;
     position: absolute; 
     bottom: 10px; 
     right: 10px; 
     z-index: 100000;
+    color: white;
 }
